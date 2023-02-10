@@ -16,6 +16,7 @@ const postSlice = createSlice({
             id,
             title,
             content,
+            date: new Date().toISOString(),
             userID,
           },
         };

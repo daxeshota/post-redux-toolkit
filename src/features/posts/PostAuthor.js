@@ -5,10 +5,10 @@ import { selectAllUsers } from "../users/userSlice";
 const PostAuthor = ({ userID }) => {
   const users = useSelector(selectAllUsers);
   const author = users.find((user) => user.id === Number(userID));
-  
+
   return (
     <>
-      <span>by {author ? author.name : "Unknowm author"}</span>
+      <span>by {author ? author.name : "Unknown author"}</span>
     </>
   );
 };
